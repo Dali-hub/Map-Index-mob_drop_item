@@ -1,0 +1,1 @@
+#define MOB_DROP_ITEM_RENEWAL
