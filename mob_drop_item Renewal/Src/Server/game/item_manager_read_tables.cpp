@@ -44,7 +44,7 @@
 					std::string& name = pTok->at(0);
 					DWORD dwItemVnum = 0;
 
-					if (false == GetVnumByOriginalName(name.c_str(), dwItemVnum))
+					if (!GetVnumByOriginalName(name.c_str(), dwItemVnum))
 					{
 						str_to_number(dwItemVnum, name.c_str());
 						if ( !ITEM_MANAGER::instance().GetTable(dwItemVnum) )
